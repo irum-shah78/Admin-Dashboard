@@ -22,10 +22,22 @@
   --tran-03: all 0.3s ease;
   --tran-02: all 0.2s ease;
 }
+body{
+  min-height: 100vh;
+  background-color: var(--primary-color);
+} 
+nav{
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+}
 nav .logo-image{
   min-width: 45px;
 }
-nav .logo-image img{
-  min-width: 40px;
+nav img{
   object-fit: cover;
+}
+nav ul i, span{
+  color: var(--black-light-color)
 }
