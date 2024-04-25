@@ -89,6 +89,10 @@ span{
 .nav-links li a:hover span{
   color: var(--primary-color);
 }
+.logout{
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
 .toggle{
   position: absolute;
   right: 14px;
