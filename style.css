@@ -87,6 +87,9 @@ nav ul i, span{
   border-radius: 50%;
   background-color: var(--primary-color);
 }
+body.dark li a:hover:before{
+  background-color: var(--text-color);
+}
 i{
   font-size: 20px;
   min-width: 32px;
@@ -102,6 +105,10 @@ nav.close span{
 .nav-links li a:hover i,
 .nav-links li a:hover span{
   color: var(--primary-color);
+}
+body.dark .nav-links li a:hover i,
+body.dark .nav-links li a:hover span{
+  color: var(--text-color);
 }
 .items .logout{
   padding-top: 10px;
@@ -152,15 +159,53 @@ nav.close ~ .dashboard{
   left: 73px;
   width: calc(100% - 73px);
 }
-.top{
+.dashboard .top{
   top: 0;
   left: 250px;
   width: calc(100% - 250px);
   padding: 10px 14px;
   background-color: var(--panel-color);
+  transition: var(--tran-05);
+}
+nav.close ~ .dashboard .top{
+  left: 73px;
+  width: calc(100% - 73px);
 }
 .sidebar-toggle{
   font-size: 26px;
   color: var(--text-color);
   cursor: pointer;
+}
+.dashboard .top .search-box{
+  position: relative;
+  height: 45px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 30px;
+}
+.top .search-box input{
+  position: absolute;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--panel-color);
+  padding: 0 25px 0 50px;
+  height: 100%;
+  width: 100%;
+  color: var(--text-color);
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+.top .search-box i{
+  position: absolute;
+  left: 15px;
+  font-size: 22px;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--black-light-color);
+}
+.top img{
+  width: 40px;
+  border-radius: 50%;
 }
